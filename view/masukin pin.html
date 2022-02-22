@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-blue-700">
+    <div class="flex ml-32">
+        <div class="mt-24">             
+            <img src="pin.png" alt="">
+       </div>
+       <div class="mt-36 ml-44 font-semibold text-2xl mx-auto">
+            <h1 class="text-white">MASUKAN PIN</h1>
+            <form class="mt-12" action="" onsubmit="PIN()">
+                <input type="password" name="" id="angkapin" placeholder="******" required>
+                <button class="text-white" type="submit">ENTER</button>
+            </form>
+            <h1 class="text-white text-center mt-24">
+                <p>TEKAN 'ENTER' JIKA SELESAI <br> MEMASUKAN PIN </p>
+            </h1>
+         </div>
+    </div>
+</body>
+<script>
+    function PIN() {
+        let PIN = document.getElementById("angkapin").value;
+        if (PIN == '12345') {
+            window.open ('tunai.html', '_blank');
+            window.close ('masukin pin.html');
+        } else {
+            alert('pin salak')
+        }
+    }
+</script>  
+</body> 
+</html>
